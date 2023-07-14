@@ -1,0 +1,52 @@
+header {
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(249, 219, 121, 0.384);
+  }
+  
+  header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header img {
+    width: auto;
+    height: 60px;
+  }
+  
+  header nav {
+    width: 350px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .link-topo {
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.897);
+    text-decoration: none;
+  }
+  .link-topo:hover {
+    color: rgba(165, 42, 42, 0.877);
+    transform: scale(1.2);
+    
+  }
+  
+  @media screen and (max-width: 662px){
+    header div{
+      flex-direction: column;
+    }
+  
+    header nav {
+      border-top: 1px solid grey;
+      width: 100%;
+      justify-content: space-around;
+      padding-top: 10px;
+    }
+  }
